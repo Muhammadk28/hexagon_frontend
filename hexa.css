@@ -1,0 +1,66 @@
+/* at first we fixed our div width height & color*/
+
+.mithen{
+    width: 200px;
+    height: 200px;
+}
+.ethen{
+    width: 250px;
+    height: 250px;
+}
+.propen{
+    width:500px;
+    height: 500px;
+}
+
+.color1{
+    background: teal;
+    color:black;
+    font-size: 20px;
+}
+
+.color2{
+    background: cornflowerblue;
+    color: coral;
+    font-size: 20px;
+}
+.color3{
+    background: tomato;
+    color: purple;
+    font-size: 20px;
+}
+
+/* at now we work about hexagon. */
+
+.hex{
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    margin: 50px;
+}
+
+.hexagon{
+    width: calc(100% * 0.57735);
+    height: 100%;
+    display: inline-block;
+}
+.hexagon:before{
+    position: absolute;
+    top:0;
+    right: calc((100% /2) - ((100% * 0.57735) / 2));
+    background:  inherit;
+    width: inherit;
+    height: inherit;
+    transform: rotateZ(60deg);
+    content: "";
+}
+.hexagon:after{
+    position: absolute;
+    top:0;
+    right: calc((100% /2) - ((100% * 0.57735) / 2));
+    background:  inherit;
+    width: inherit;
+    height: inherit;
+    transform: rotateZ(-60deg);
+    content: "";
+}
